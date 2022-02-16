@@ -9,23 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./dist/index.bundle.js":
-/*!******************************!*\
-  !*** ./dist/index.bundle.js ***!
-  \******************************/
-/***/ (() => {
-
-eval("\n\n//# sourceURL=webpack://my-webpack-project/./dist/index.bundle.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ (() => {
 
-eval("console.log(\"Hello World !\");\n\n\n//# sourceURL=webpack://my-webpack-project/./src/index.js?");
+eval("\nconsole.log(\"comment ça va!!!!!\");\n\n\n//# sourceURL=webpack://my-webpack-project/./src/index.js?");
 
 /***/ })
 
@@ -35,9 +25,8 @@ eval("console.log(\"Hello World !\");\n\n\n//# sourceURL=webpack://my-webpack-pr
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	__webpack_modules__["./src/index.js"]();
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./dist/index.bundle.js"]();
+/******/ 	__webpack_modules__["./src/index.js"]();
 /******/ 	
 /******/ })()
 ;

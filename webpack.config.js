@@ -9,6 +9,7 @@ const config = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
+    filename: "app.bundle.js",
   },
   devServer: {
     open: true,
@@ -16,11 +17,11 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      hash: true,
+      title: "Front-End Dolead technical test",
+      myPageHeader: "Welcome to this technical test",
+      template: "./src/index.html",
     }),
-
-    // Add your plugins here
-    // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
   module: {
     rules: [
