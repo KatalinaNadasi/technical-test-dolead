@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home Template</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/home.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1>{{ title }}</h1>
+      <h1><%= htmlWebpackPlugin.options.myPageHeader %></h1>
     </div>
   </body>
 </html>
