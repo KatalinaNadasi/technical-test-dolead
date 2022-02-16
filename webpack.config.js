@@ -6,21 +6,31 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const isProduction = process.env.NODE_ENV == "production";
 
 const config = {
-  entry: "./src/index.js",
+  entry: "./app.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "app.bundle.js",
+    filename: "[name].bundle.js",
+    // sourceMapFilename: '[name].[hash:8].map',
   },
   devServer: {
     open: true,
     host: "localhost",
   },
   plugins: [
+    new HtmlWebpackPlugin(), // Generates default index.html
     new HtmlWebpackPlugin({
       hash: true,
-      title: "Front-End Dolead technical test",
-      myPageHeader: "Welcome to this technical test",
-      template: "./src/index.html",
+      title: "About template",
+      myPageHeader: "This is about page",
+      filename: 'about.html',
+      template: "./templates/about.html",
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      title: "Home template",
+      myPageHeader: "This is the home page",
+      filename: 'home.html',
+      template: "./templates/home.html",
     }),
   ],
   module: {
