@@ -11,7 +11,19 @@ const config = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",
-    // sourceMapFilename: '[name].[hash:8].map',
+  },
+  module: {
+    loaders: {
+      rules: {
+        test: /\.scss$/,
+        loader: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ]
+      }
+    },
   },
   devServer: {
     open: true,

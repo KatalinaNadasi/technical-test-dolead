@@ -13,20 +13,54 @@
 /*!**********************!*\
   !*** ./js/common.js ***!
   \**********************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("const css = __webpack_require__(/*! ../style/common.scss */ \"./style/common.scss\");\n\n\n//# sourceURL=webpack://my-webpack-project/./js/common.js?");
+
+/***/ }),
+
+/***/ "./style/common.scss":
+/*!***************************!*\
+  !*** ./style/common.scss ***!
+  \***************************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://my-webpack-project/./js/common.js?");
+eval("throw new Error(\"Module parse failed: Unexpected token (2:5)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n| \\n> body {\\n|     background-color: pink;\\n|     p {\");\n\n//# sourceURL=webpack://my-webpack-project/./style/common.scss?");
 
 /***/ })
 
 /******/ 	});
 /************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./js/common.js"]();
+/******/ 	var __webpack_exports__ = __webpack_require__("./js/common.js");
 /******/ 	
 /******/ })()
 ;
